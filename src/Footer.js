@@ -20,10 +20,10 @@ export default function Footer() {
   return (
     <footer style={styles.footerContainer}>
       <div style={styles.IconButtonsContainer}>
-        <IconButton sx={styles.LinkedInIconButton} disableRipple>
+        <IconButton component="a" href="https://www.linkedin.com/in/reeseparker/" sx={styles.LinkedInIconButton} disableRipple>
           <LinkedInIcon color="primary" />
         </IconButton>
-        <IconButton sx={styles.GitHubIconButton} disableRipple>
+        <IconButton component="a" href="https://github.com/reese-parker" sx={styles.GitHubIconButton} disableRipple>
           <GitHubIcon color="primary" />
         </IconButton>
       </div>
