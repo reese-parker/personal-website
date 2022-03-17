@@ -7,12 +7,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const styles = {
   footerContainer: {
-    // border: "2px solid yellow",
+    background: "#000",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "flex-end",
-    height: "100%",
   },
 };
 
@@ -20,14 +19,26 @@ export default function Footer() {
   return (
     <footer style={styles.footerContainer}>
       <div style={styles.IconButtonsContainer}>
-        <IconButton component="a" href="https://www.linkedin.com/in/reeseparker/" sx={styles.LinkedInIconButton} disableRipple>
+        <IconButton
+          component="a"
+          href="https://www.linkedin.com/in/reeseparker/"
+          sx={styles.LinkedInIconButton}
+          disableRipple
+        >
           <LinkedInIcon color="primary" />
         </IconButton>
-        <IconButton component="a" href="https://github.com/reese-parker" sx={styles.GitHubIconButton} disableRipple>
+        <IconButton
+          component="a"
+          href="https://github.com/reese-parker"
+          sx={styles.GitHubIconButton}
+          disableRipple
+        >
           <GitHubIcon color="primary" />
         </IconButton>
       </div>
-      <Typography variant="caption" color="primary">2022</Typography>
+      <Typography variant="caption" color="primary">
+        2022
+      </Typography>
     </footer>
   );
 }
