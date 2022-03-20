@@ -7,54 +7,31 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const styles = {
-  AppBar: {
-    background: "#000",
-    // border: "2px solid blue",
-    height: "100%"
-  },
-  Toolbar: {
-    display: "flex",
-    justifyContent: "space-between",
-  },
-  logoContainer: {
-    border: "1px solid",
-    width: "40px",
-    height: "40px",
-    borderRadius: "50%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-};
+import styles from "./styles/NavbarStyles";
 
 export default function Navbar(props) {
-  const { handleOpenDrawer } = props;
-
-  const toggleDrawer = (open) => {
-    handleOpenDrawer();
-  };
-
   return (
-    <AppBar sx={styles.AppBar} position="static">
-      <Toolbar sx={styles.Toolbar}>
-        <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          sx={{ mr: 2 }}
-          onClick={() => toggleDrawer(true)}
-        >
-          <MenuIcon color="primary" />
-        </IconButton>
+    <>
+      <AppBar id="header"  sx={styles.AppBar}>
+        <Toolbar  sx={styles.Toolbar}>
+          <IconButton
+            size="large"
+            edge="start"
+            aria-label="menu"
+            sx={styles.IconButton}
+            onClick={props.handleOpenDrawer}
+          >
+            <MenuIcon color="primary" />
+          </IconButton>
 
-        <Box color="primary" style={styles.logoContainer}>
-          <Typography color="primary" sx={styles.logo}>
-            RP
-          </Typography>
-        </Box>
-      </Toolbar>
-    </AppBar>
+          <Box style={styles.logoContainer}>
+            <Typography color="primary" sx={styles.logo}>
+              RP
+            </Typography>
+          </Box>
+        </Toolbar>
+      </AppBar>
+      <Toolbar   sx={styles.headerToolbar} />
+    </>
   );
 }
