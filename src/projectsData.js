@@ -1,5 +1,12 @@
 export const projects = [
   {
+    name: "Social Media Clone",
+    description: "A social media app where users can sign up for an account and post messages.",
+    technologies: ["React", "Firebase Auth/Firestore", "React-Router"],
+    projectLink: "https://social-media-clone-277a6.web.app",
+    githubLink: "https://github.com/reese-parker/social-media-clone",
+  },
+  {
     name: "Todo App",
     description: "A to-do app for easy task management.",
     technologies: ["React", "Material UI", "Web Storage API"],
