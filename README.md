@@ -29,7 +29,7 @@ This project is designed to be a personal website to showcase portfolio projects
 
 * Jest is used to test the ProjectCard and ContactCard components.
 * The ProjectCard component includes tests for rendering a project from the projectsData.js file, as well as testing the correct links are applied for GitHub and the hosted project. Additional tests confirm whether the list of applicable technologies are joined into a string. 
-* The ContactCard component includes tests for rendering all contact methods from the contactData.js file, as well as confirming the correct Material UI icon is applied 
+* The ContactCard component includes tests for rendering all contact methods from the contactData.js file, as well as confirming the switch function returns the correct Material UI icon.
 
 ## Future Features
 
