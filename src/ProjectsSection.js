@@ -1,36 +1,28 @@
 import React from "react";
-
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-
-import { projects } from "./projectsData";
-import styles from "./styles/ProjectSectionStyles";
+import projects from "./data/projectsData";
+import styles from "./styles/ProjectsSectionStyles.module.css";
 import ProjectCard from "./ProjectCard";
 
+const projectCards = projects.map((project) => {
+  return (
+    <Grid className={styles.GridItem} key={project.name} item xs={12} sm={6} md={4}>
+      <ProjectCard
+        name={project.name}
+        technologies={project.technologies}
+        description={project.description}
+        projectLink={project.projectLink}
+        githubLink={project.githubLink}
+      />
+    </Grid>
+  );
+});
 
 export default function ProjectsSection() {
-  const projectCards = projects.map((project) => {
-    return (
-      <Grid
-        key={project.name}
-        item
-        xs={12}
-        sm={6}
-        md={4}
-      >
-        <ProjectCard
-          name={project.name}
-          technologies={project.technologies}
-          description={project.description}
-          projectLink={project.projectLink}
-          githubLink={project.githubLink}
-        />
-      </Grid>
-    );
-  });
-
   return (
-    <section id="projects" style={styles.sectionContainer}>
+    <section id="projects" className={styles.sectionContainer}>
+      <div style={{ height: "56px" }} />
       <Typography variant="h3">PROJECTS</Typography>
       <Grid
         container
@@ -38,12 +30,10 @@ export default function ProjectsSection() {
         justifyContent="flex-start"
         alignItems="center"
         spacing={2}
-        sx={styles.GridContainer}
+        className={styles.GridContainer}
       >
         {projectCards}
       </Grid>
     </section>
   );
 }
-
-
