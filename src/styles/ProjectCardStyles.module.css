@@ -1,0 +1,11 @@
+.Card {
+  width: 95%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+.CardActions {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}

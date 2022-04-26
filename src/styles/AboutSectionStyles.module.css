@@ -1,0 +1,70 @@
+.sectionContainer {
+  width: 100%;
+  margin-top: 0;
+  letter-spacing: 0.1rem;
+  padding: 0 2rem 60px;
+  color: white;
+}
+.name {
+  padding-top: 25px;
+  /* text-align: center; */
+}
+
+
+.highlightColor {
+  color: #2a9d8f;
+}
+
+.technologiesDescription {
+  font-size: 0.8rem;
+}
+
+.technologiesContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.technology {
+  text-align: center;
+  font-size: 0.7rem;
+}
+@media (min-width: 400px) {
+  .name {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .name {
+    font-size: 4rem;
+  }
+  .jobTitle {
+    font-size: 3rem;
+  }
+  .description {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 900px) {
+  .name {
+    padding-top: 50px;
+  }
+  .jobTitle {
+    padding-top: 50px;
+  }
+  .technologyCard {
+    width: 100px;
+  }
+  .technologiesGridContainer {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1200px) {
+ .sectionContainer {
+   padding-left: 5rem;
+ }
+}

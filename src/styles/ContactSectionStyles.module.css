@@ -1,0 +1,33 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 2rem 80px;
+}
+
+.GridContainer {
+  max-width: 96%;
+  letter-spacing: 0.1rem;
+  padding-top: 30px;
+  padding-bottom: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  text-align: center;
+  color: white;
+}
+
+.GridItem {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .GridContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
