@@ -14,6 +14,7 @@ This project is designed to be a personal website to showcase portfolio projects
 * [React-scroll](https://www.npmjs.com/package/react-scroll) is used to provide smooth scrolling when selecting menu items. [React-visibility-sensor](https://www.npmjs.com/package/react-visibility-sensor) is used to create motion when components are scrolled in and out of view.
 * Loading state is managed with useState and useEffect.
 * Hosting is provided through Firebase.
+* Jest is used to test reusable project and contact cards.
 
 
 ## How it works
@@ -23,13 +24,18 @@ This project is designed to be a personal website to showcase portfolio projects
 * Components are wrapped with MUI fade transitions. Visibility is triggered when the component is in the viewport. Components have their own listeners and are triggered individually to provide smooth motion while scrolling through content.
 * The project card component is reusable; The projects data object is mapped over and passes props to display dynamic project cards.
 * The contact card component takes props and conditionally renders the appropriate icon buttons. Contact information is passed through props.
-* The app is hosted through Firebase Hosting and has been set up to use Firebase/Google Analytics.
+
+## Testing
+
+* Jest is used to test the ProjectCard and ContactCard components.
+* The ProjectCard component includes tests for rendering a project from the projectsData.js file, as well as testing the correct links are applied for GitHub and the hosted project. Additional tests confirm whether the list of applicable technologies are joined into a string. 
+* The ContactCard component includes tests for rendering all contact methods from the contactData.js file, as well as confirming the correct Material UI icon is applied 
 
 ## Future Features
 
 * Screenshots attatched to project cards.
 * Photos and additional personal content for the About section.
-* Animations for titles and other components.
+* Animations for project cards.
 
 ## Installation
 
