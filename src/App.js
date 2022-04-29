@@ -28,7 +28,7 @@ function App() {
           <AppLoadingBar isAppLoading={isAppLoading} />
         ) : (
           <>
-            <AboutSection isLoading={isAppLoading} />
+            <AboutSection />
             <ProjectsSection />
             <ContactSection />
           </>

@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import Fade from "@mui/material/Fade";
 import projects from "./data/projectsData";
 import styles from "./styles/ProjectsSectionStyles.module.css";
 import ProjectCard from "./ProjectCard";
@@ -23,7 +24,9 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className={styles.sectionContainer}>
       <div style={{ height: "56px" }} />
-      <Typography variant="h3">PROJECTS</Typography>
+      <Fade in={true} timeout={1500}>
+        <Typography variant="h3">PROJECTS</Typography>
+        </Fade>
       <Grid
         container
         direction="row"

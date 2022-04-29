@@ -16,10 +16,8 @@ const technologies = [
   "FIREBASE",
 ];
 
-export default function AboutSection({ isLoading }) {
-  const nameIsVisible = !isLoading;
-  const jobTitleIsVisible = !isLoading;
-  const descriptionIsVisible = !isLoading;
+export default function AboutSection() {
+
 
   return (
     <section className={styles.sectionContainer} id="about">
@@ -31,7 +29,7 @@ export default function AboutSection({ isLoading }) {
         wrap="nowrap"
       >
         <Grid id="header" item xs={3}>
-          <Fade in={nameIsVisible} timeout={1500}>
+          <Fade in={true} timeout={1500}>
             <Typography variant="h3" className={styles.name}>
               REESE PARKER
             </Typography>
@@ -39,7 +37,7 @@ export default function AboutSection({ isLoading }) {
         </Grid>
 
         <Grid item xs={2}>
-          <Fade in={jobTitleIsVisible} timeout={2000}>
+          <Fade in={true} timeout={2000}>
             <Typography
               color="primary"
               className={styles.jobTitle}
@@ -53,14 +51,14 @@ export default function AboutSection({ isLoading }) {
         
 
         <Grid className={styles.description} item xs={3}>
-          <Fade in={descriptionIsVisible} timeout={2000}>
+          <Fade in={true} timeout={2000}>
             <p>
               Hi, my name is{" "}
               <span className={styles.highlightColor}>Reese</span>.
             </p>
           </Fade>
 
-          <Fade in={descriptionIsVisible} timeout={2000}>
+          <Fade in={true} timeout={2000}>
             <div>
               <p>
                 I'm a developer living in
