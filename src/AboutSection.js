@@ -6,28 +6,21 @@ import Card from "@mui/material/Card";
 import styles from "./styles/AboutSectionStyles.module.css";
 
 const technologies = [
-  "HTML",
-  "CSS",
+  "HTML / CSS",
   "JAVASCRIPT",
   "REACT",
+  "NODE",
+  "EXPRESS",
+  "MONGODB",
   "GIT",
   "JEST",
-  "MATERIAL UI",
-  "FIREBASE",
 ];
 
 export default function AboutSection() {
-
-
   return (
     <section className={styles.sectionContainer} id="about">
       <div style={{ height: "56px" }} />
-      <Grid
-        container
-        direction="column"
-        alignItems="flex-start"      
-        wrap="nowrap"
-      >
+      <Grid container direction="column" alignItems="flex-start" wrap="nowrap">
         <Grid id="header" item xs={3}>
           <Fade in={true} timeout={1500}>
             <Typography variant="h3" className={styles.name}>
@@ -47,8 +40,6 @@ export default function AboutSection() {
             </Typography>
           </Fade>
         </Grid>
-
-        
 
         <Grid className={styles.description} item xs={3}>
           <Fade in={true} timeout={2000}>
@@ -72,7 +63,12 @@ export default function AboutSection() {
                   Here are some of the technologies I use:
                 </p>
 
-                <Grid className={styles.technologiesGridContainer} justifyContent="flex-start" container spacing={1}>
+                <Grid
+                  className={styles.technologiesGridContainer}
+                  justifyContent="flex-start"
+                  container
+                  spacing={1}
+                >
                   {technologies.map((technology) => (
                     <Grid key={technology} item xs={6} sm={3} md={1}>
                       <Card className={styles.technologyCard}>

@@ -14,6 +14,13 @@ const projects = [
     githubLink: "https://github.com/reese-parker/social-media-clone",
   },
   {
+    name: "Inventory Manager",
+    description: "An inventory management app for a store.",
+    technologies: ["Node.js", "Express", "MongoDB"],
+    projectLink: "https://cryptic-inlet-59560.herokuapp.com",
+    githubLink: "https://github.com/reese-parker/inventory-management-app",
+  },
+  {
     name: "Todo App",
     description: "A to-do app for easy task management.",
     technologies: ["React", "Material UI", "Web Storage API"],
@@ -33,13 +40,6 @@ const projects = [
     technologies: ["React", "Firebase", "Material UI", "Jest"],
     projectLink: "https://reeseparker.com",
     githubLink: "https://github.com/reese-parker/personal-website",
-  },
-  {
-    name: "Joke Generator",
-    description: "A joke generator for randomized dad jokes.",
-    technologies: ["React", "Axios", "CSS Modules"],
-    projectLink: "https://reese-parker.github.io/joke-generator/",
-    githubLink: "https://github.com/reese-parker/joke-generator",
   },
 ];
 
